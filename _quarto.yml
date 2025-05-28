@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "CIP Prompts"
+  title: ""
   navbar:
     left:
       - href: index.qmd
@@ -15,11 +15,10 @@ website:
   page-footer: 
     left: "Here goes copyright"
 
+brand: brand/_brand.yml
 
 format:
   html:
-    theme: litera
-    css: styles.css
     toc: true
     code-overflow: wrap
     code-copy: hover

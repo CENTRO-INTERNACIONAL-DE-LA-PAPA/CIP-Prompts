@@ -1,0 +1,19 @@
+color:
+  palette:
+    dark-grey: "#222222"
+    blue: "#ddeaf1"
+  background: "#f0efe7"
+  foreground: black
+  primary: "#ffffff"
+
+logo: 
+  medium: images/inverted_cip_cgiar_corrected.png
+
+typography:
+  fonts:
+    - family: Jura
+      source: google
+  base: Jura
+  headings: Jura
+  link: 
+    color: "#f47920"
