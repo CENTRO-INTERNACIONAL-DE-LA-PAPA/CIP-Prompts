@@ -5,4 +5,4 @@ subtitle: "A collection of workflows to guide LLm's for the generation of high q
 
 # Workflow for CCCAP Report 2015 - 2025
 
-Please follow this [link](workflows/cccap_template.qmd)
+Please follow this [link](prompt_workflows/cccap_template.qmd)
