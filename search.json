@@ -1,10 +1,17 @@
 [
   {
+    "objectID": "prompt_workflows/cccap_template.html",
+    "href": "prompt_workflows/cccap_template.html",
+    "title": "CCCAP Report 2015 - 2025 Workflow",
+    "section": "",
+    "text": "Used Ares (a tool built to generate reports from CGSpace) to run an initial search.\nFilters applied:\n\nRepitory: CGSpace.\nCommunity: International Potato Center.\nCountry: China.\nDate Range: 2015 - 2025\n\nResults: 21 publications identified."
+  },
+  {
     "objectID": "prompt_workflows/cccap_template.html#step-1-initial-search-in-ares",
     "href": "prompt_workflows/cccap_template.html#step-1-initial-search-in-ares",
     "title": "CCCAP Report 2015 - 2025 Workflow",
-    "section": "Step 1: Initial Search in Ares",
-    "text": "Step 1: Initial Search in Ares\nUsed Ares (a tool built to generate reports from CGSpace) to run an initial search.\nFilters applied:\n\nRepitory: CGSpace.\nCommunity: International Potato Center.\nCountry: China.\nDate Range: 2015 - 2025\n\nResults: 21 publications identified."
+    "section": "",
+    "text": "Used Ares (a tool built to generate reports from CGSpace) to run an initial search.\nFilters applied:\n\nRepitory: CGSpace.\nCommunity: International Potato Center.\nCountry: China.\nDate Range: 2015 - 2025\n\nResults: 21 publications identified."
   },
   {
     "objectID": "prompt_workflows/cccap_template.html#step-2-list-review-and-expansion",
