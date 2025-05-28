@@ -242,7 +242,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><img src=".png" class="img-fluid"></p>
 <section id="step-1-initial-search-in-ares" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-initial-search-in-ares">Step 1: Initial Search in Ares</h2>
 <p>Used Ares (a tool built to generate reports from CGSpace) to run an initial search.</p>
@@ -1290,7 +1289,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/CENTRO-INTERNACIONAL-DE-LA-PAPA\.github\.io\/CIP-Prompts\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

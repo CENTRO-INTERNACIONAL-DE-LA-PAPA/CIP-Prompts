@@ -230,7 +230,7 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="AI,CCCAP,potato,prompt,LLM" data-listing-file-modified-sort="1748465541431" data-listing-reading-time-sort="24" data-listing-word-count-sort="4633" data-listing-title-sort="CCCAP Report 2015 - 2025 Workflow" data-listing-filename-sort="cccap_template.qmd">
+<tr data-index="0" data-categories="AI,CCCAP,potato,prompt,LLM" data-listing-file-modified-sort="1748466120690" data-listing-reading-time-sort="24" data-listing-word-count-sort="4633" data-listing-title-sort="CCCAP Report 2015 - 2025 Workflow" data-listing-filename-sort="cccap_template.qmd">
 <td>
 <a href="./prompt_workflows/cccap_template.html" class="title listing-title">CCCAP Report 2015 - 2025 Workflow</a>
 </td>
@@ -325,7 +325,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/CENTRO-INTERNACIONAL-DE-LA-PAPA\.github\.io\/CIP-Prompts\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

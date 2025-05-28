@@ -15,8 +15,6 @@ categories:
     - LLM
 ---
 
-![]()
-
 ## Step 1: Initial Search in Ares
 
 Used Ares (a tool built to generate reports from CGSpace) to run an initial search.
