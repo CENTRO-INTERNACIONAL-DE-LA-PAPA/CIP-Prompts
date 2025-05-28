@@ -1,0 +1,624 @@
+---
+title: "CCCAP Report 2015 - 2025 Workflow"
+subtitle: "Compedium preparation process"
+author: 
+    - name: Piero Palacios
+    - name: Mishell Portilla
+    - name: Leroy Mwanzia
+    - name: Henry Juarez
+editor: source
+categories:
+    - AI
+    - CCCAP
+    - potato
+    - prompt
+    - LLM
+---
+
+![]()
+
+## Step 1: Initial Search in Ares
+
+Used Ares (a tool built to generate reports from CGSpace) to run an initial search.
+
+**Filters applied:**
+
+-   Repitory: CGSpace.
+
+-   Community: International Potato Center.
+
+-   Country: China.
+
+-   Date Range: 2015 - 2025
+
+**Results:** 21 publications identified.
+
+## Step 2: List Review and Expansion
+
+Phillip Kear (CIP) reviewed the initial list and added additional relevant entries.\
+**Updated total:** 41 publications.
+
+## Step 3: Full-text Retrieval
+
+Collect all the documents (41 in total) to a sharepoint.
+
+## Step 4: [Notebook LLM](https://notebooklm.google/){target="_blank"}
+
+The pdf references were uploaded to NotebookLLM (by Google) and we passed the following prompt reference by reference:
+
+::: {.callout-note appearance="minimal" title="ChatGPT  4o prompt to NotebookLLM" collapse="true"}
+```md
+Reference Title: [Full title]
+Year: [Publication year]
+Core Analysis:
+•	What is the document’s main objective?
+•	What are the key findings or results?
+•	Which findings are most significant or relevant?
+•	What conclusions were drawn and how do they relate to the objectives?
+•	Briefly describe the context, focus, and approach (if it helps explain results).
+Goal:
+•	What was the aim of this work?
+•	How was it pursued and achieved?
+Results & Impact:
+•	What was accomplished?
+•	Any measurable outcomes (e.g., yield gains, new varieties, income boost, disease resistance)?
+•	Were any tools, methods, models, or policies developed?
+•	Mention names of varieties, stats, or adoption details.
+Funding & Institutions:
+•	Who funded it?
+•	Who led the work (e.g., CIP, CCCAP, CAAS)?
+Tags:
+•	Choose key themes (e.g., climate adaptation, pest control, food security, etc.)
+APA Citation:
+•	Format: AuthorLastName, Initials. (Year). Title in italics. Source, volume(issue), pages. https://doi.org/xxx
+Purpose Reminder:
+•	Show CCCAP/CIP’s impact in China.
+•	Highlight real-world benefits to inform donors, partners, and the research community.
+```
+:::
+
+## Step 5: Deepseek R1
+
+### Prompt
+
+::: {.callout-note appearance="minimal" title="Ask for structure suggestions" collapse="true"}
+```md
+I have 41 documents from the work of the International Potato Center (CIP) (also called CCCAP on China). These documents are the work of CIP from 2015 to 2025. I used the following prompt to extract information with Gemini 2.5 pro from google and it worked awesome! Prompt: Reference Title: [Full title] Year: [Publication year] Core Analysis: What is the document’s main objective? What are the key findings or results? Which findings are most significant or relevant? What conclusions were drawn and how do they relate to the objectives? Briefly describe the context, focus, and approach (if it helps explain results). Goal: What was the aim of this work? How was it pursued and achieved? Results & Impact: What was accomplished? Any measurable outcomes (e.g., yield gains, new varieties, income boost, disease resistance)? Were any tools, methods, models, or policies developed? Mention names of varieties, stats, or adoption details. Funding & Institutions: Who funded it? Who led the work (e.g., CIP, CCCAP, CAAS)? Tags: Choose key themes (e.g., climate adaptation, pest control, food security, etc.) APA Citation: Format: AuthorLastName, Initials. (Year). Title in italics. Source, volume(issue), pages. https://doi.org/xxx Purpose Reminder: Show CCCAP/CIP’s impact in China. Highlight real-world benefits to inform donors, partners, and the research community. Now the goal is to show the importance and Impact of CIP with a document that uses all the 41 references so these documents showcase the science developments done by CCCAP (CIP). What type of structure can you suggest creating a document that can do this task?
+```
+:::
+
+### Answer
+
+::: {.callout-note appearance="minimal" collapse="true" title="Answer"}
+```md
+To synthesize 41 CIP/CCAP documents into a cohesive narrative that showcases their scientific impact and real-world contributions (especially in China), use this structured framework:
+Suggested Structure for the Impact Document
+(With rationale and examples)
+1. Executive Summary
+Purpose: Provide a high-level overview of CIP/CCAP’s decade-long work (2015–2025).
+Key Elements:
+Total projects/studies conducted.
+Geographic focus (e.g., China-specific achievements).
+Major themes (e.g., climate resilience, food security).
+Top measurable outcomes (e.g., "X new potato varieties released in China, boosting yields by 30%").
+2. Thematic Chapters
+Group findings by tags (from your prompt analysis) to highlight cross-cutting scientific contributions. Example themes:
+Climate Adaptation & Resilience
+Objective: Develop drought-/heat-tolerant varieties.
+Key Findings: Highlight varieties (e.g., "Variety X increased yields by 25% in arid regions of China").
+Impact: Adoption rates, farmer income changes, policy influence (e.g., integration into China’s climate-smart agriculture plans).
+Disease & Pest Management
+Objective: Combat late blight/viral diseases.
+Key Findings: Resistant varieties, biocontrol methods.
+Impact: Reduced pesticide use, yield stabilization.
+Nutrition & Food Security
+Objective: Biofortification (e.g., vitamin A-enriched sweet potatoes).
+Impact: Improved dietary outcomes in vulnerable populations (cite China-specific data).
+Innovative Tools & Methods
+Objective: Digital agriculture, predictive models.
+Impact: Scalability of solutions (e.g., "Model Y adopted by 10,000 Chinese farmers").
+3. China-Focused Section
+Subtitle: CCCAP’s Decade of Impact in China
+Structure:
+Timeline of key milestones (2015–2025).
+Case studies (e.g., "Potato Value Chain Development in Yunnan Province").
+Partnerships with Chinese institutions (e.g., CAAS).
+Policy influence (e.g., contributions to China’s "Potato-as-Staple" initiative).
+4. Cross-Cutting Achievements
+Variety Development: List all CIP/CCAP-bred varieties adopted in China (names, traits, adoption stats).
+Capacity Building: Training programs, farmer field schools.
+Gender Inclusion: How projects empowered women farmers.
+5. Funding & Collaboration Landscape
+Donor Impact: Map funding sources (e.g., CGIAR, national grants) to outcomes.
+Institutional Partnerships: Highlight CIP/CCAP’s role as a bridge between global science and local implementation.
+6. Visual Summaries
+Infographics: Map of project sites in China, yield trends over time.
+Tables: Compare pre-/post-intervention metrics (e.g., income, productivity).
+Photos: Farmer testimonials, field trials.
+7. Conclusion & Future Directions
+Reinforce CIP/CCAP’s role in transforming agri-food systems.
+Link past successes to future goals (e.g., scaling digital tools, expanding biofortification).
+Appendices
+APA Citations: Full list of the 41 documents.
+Methodology: Brief note on how data was extracted/analyzed (using Gemini 2.5 Pro).
+
+Why This Works
+Donor-Focused: Emphasizes ROI via metrics (yields, income, adoption).
+Narrative Flow: Connects science to real-world change (e.g., "Variety X → 30% yield gain → 10,000 farmers benefitted").
+China-Centric: Meets the "Purpose Reminder" by showcasing localized impact.
+Thematic + Chronological: Balances depth with readability.
+Pro Tips
+Use bolded key stats in headings (e.g., "50% Reduction in Post-Harvest Losses Through Improved Storage Techniques").
+Include pull quotes from farmers/policymakers for human interest.
+Add a foreword by a CIP/CCAP leader to contextualize the report.
+This structure ensures clarity, demonstrates scientific rigor, and aligns with donor/partner priorities. Let me know if you need help drafting specific sections! 🥔📊
+```
+:::
+
+### Prompt
+
+::: {.callout-note title="Prompt" collapse="true"}
+```md
+In this document I want to refer to CIP as CCCAP. Also, I want to be sure that all the references are used, and APA cited on the text like text (author, year) and in a references section. This is not a fabricated story, this must be a story with a clear connection to the scientific documents and their results. Please, first modify your structure to get that and then give me a prompt to tell the LLM to achieve this.
+```
+:::
+
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Here’s a revised structure that ensures rigorous referencing, uses "CCCAP" consistently, and ties every claim to specific documents. I’ll follow this with a tailored LLM prompt to execute it.
+
+Revised Impact Document Structure
+(Ensures traceability to sources and CCCAP branding)
+1. Title Page
+Title: CCCAP’s Decade of Scientific Impact in China (2015–2025): Evidence from 41 Studies
+Subtitle: Advancing Potato and Sweet Potato Innovation for Climate Resilience, Food Security, and Rural Prosperity
+2. Executive Summary
+Summarize CCCAP’s overarching goals and achievements, citing key documents (e.g., "As demonstrated across 15 studies on climate adaptation (Author et al., 2018; Author et al., 2020)...").
+Highlight China-specific outcomes (e.g., "In China, CCCAP collaborations with CAAS led to X results (Author et al., 2022)").
+3. Methodology
+Briefly explain:
+How data was extracted (Gemini 2.5 Pro analysis of 41 CCCAP documents).
+Criteria for selecting themes and tagging references.
+Commitment to trace all claims to APA-cited sources.
+4. Thematic Chapters
+Group findings by tags (e.g., climate adaptation, pest control). For each theme:
+Objective: State CCCAP’s goal, citing 1–2 foundational documents.
+Key Findings: Paraphrase results with (Author, Year) citations (e.g., "Drought-tolerant variety ‘X’ increased yields by 25% in Sichuan Province (Zhang et al., 2021)").
+Impact: Link findings to real-world outcomes, citing adoption studies or policy papers (e.g., "Adopted by 10,000 farmers by 2023 (Liu et al., 2023)").
+5. CCCAP in China: A Decade of Collaboration
+Partnerships: Highlight joint projects with CAAS, provincial governments, etc., citing partnership-focused documents.
+Case Studies: Use 3–4 standout examples (e.g., "Biofortified Sweet Potato Adoption in Guangxi (Wang et al., 2019)").
+Policy Influence: Reference documents showing CCCAP’s role in national strategies (e.g., China’s Potato-as-Staple Policy).
+6. Innovations and Tools
+List tools/methods developed by CCCAP (e.g., predictive models, seed systems), citing the papers that introduced them.
+Include variety names, adoption stats, and economic impacts with citations.
+7. Funding and Institutional Contributions
+Map funders (e.g., CGIAR, China’s Ministry of Agriculture) to specific outcomes, citing donor-acknowledged studies.
+8. Conclusion
+Synthesize evidence, emphasizing how CCCAP’s work (as shown in the 41 documents) addresses global and China-specific challenges.
+9. References
+Full APA list of all 41 documents, formatted as:
+Author, A. (Year). Title in italics. Source, volume(issue), pages. DOI/URL
+Appendices (Optional but Recommended)
+Table: Cross-reference all 41 documents by theme, objective, and key outcome.
+Methodology Details: Gemini prompt + extraction workflow.
+
+Critical Adjustments for Your Needs
+CCCAP Branding: Replace all instances of "CIP" with "CCCAP" except in citations where the original document uses "CIP."
+In-Text Citations: Every claim must reference at least one document (Author, Year). For multi-document support: (Author et al., 2020; Li et al., 2021; Zhou et al., 2023).
+No Fabrication: Only include findings directly extracted from the 41 documents.
+
+Tailored LLM Prompt for Writing
+Use this to generate sections while enforcing citations and CCCAP focus:
+Copy
+Download
+"Act as a scientific writer synthesizing 41 CCCAP (International Potato Center) documents (2015–2025) into an impact report. Follow these rules:  
+
+1. **Refer to the organization as CCCAP**, except in APA citations where the original document uses 'CIP.'  
+2. **Base all claims strictly on the 41 provided documents**—no extrapolation or unsourced statements.  
+3. **Cite sources in APA style** (Author, Year) for every claim. For example: 'CCCAP-developed variety “Jizhangshu 5” reduced late blight incidence by 40% (Chen et al., 2021).'  
+4. **Structure content using these headings**: Executive Summary, Methodology, Thematic Chapters (use [tags] as subheadings), CCCAP in China, Innovations, Funding, Conclusion.  
+5. **Highlight China-focused outcomes** in every section.  
+6. **Include all 41 documents in the References section** with full APA formatting.  
+
+Extract and synthesize information from the documents using this template for each:  
+- Reference Title: [Title]  
+- Year: [Year]  
+- Key findings relevant to CCCAP’s impact in China: [1–3 bullet points]  
+- APA Citation: [Formatted correctly]  
+
+Prioritize measurable outcomes (yields, income, adoption rates) and name tools/varieties."  
+
+Example Passage (to illustrate style):
+*"CCCAP’s work on biofortification addressed vitamin A deficiency in rural China through the release of ‘Zhongshu 18,’ an orange-fleshed sweet potato. Trials in Yunnan Province showed a 15% increase in dietary vitamin A intake among children (Wu et al., 2018). By 2023, over 50,000 farmers had adopted the variety, boosting household incomes by an average of 12% (Liu et al., 2023). This success relied on partnerships with CAAS and provincial extension services (CCCAP, 2020)."*
+This ensures your document is both rigorous and narrative-driven, directly tied to the evidence. Let me know if you need further refinements! 🥔📑
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Don't include the methodology of the document generation.
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Here’s the revised structure (removing methodology) and a tailored LLM prompt to ensure rigorous citation of all 41 documents and CCCAP branding:
+
+Final Document Structure
+(Excludes methodology, focuses on CCCAP branding and APA citations)
+1. Title Page
+Title: CCCAP’s Scientific Impact in China (2015–2025): Evidence from 41 Studies
+Subtitle: Innovations in Potato and Sweet Potato Systems for Climate Resilience, Nutrition, and Prosperity
+2. Executive Summary
+Summarize CCCAP’s decade-long work, emphasizing China-focused outcomes and key themes (e.g., climate adaptation, disease resistance).
+Example: *“CCCAP’s collaboration with CAAS produced 8 drought-tolerant potato varieties adopted by 50,000 Chinese farmers (Li et al., 2020; Wang et al., 2023).”*
+3. Thematic Chapters
+Group findings by tags (e.g., Climate Adaptation, Nutrition, Pest Control). For each theme:
+Objective: CCCAP’s goal, citing 1–2 foundational documents.
+Key Findings: Paraphrase results with (Author, Year) citations.
+Impact: Link to real-world outcomes (e.g., farmer adoption, policy changes), citing follow-up studies.
+Example Subheading:
+Climate-Resilient Varieties for Arid Regions
+*“CCCAP developed ‘Xinjiang No. 3,’ a drought-tolerant potato variety that increased yields by 22% in Northwest China (Zhang et al., 2019). By 2022, it was planted across 15,000 hectares, reducing irrigation needs by 30% (Liu et al., 2022).”*
+4. CCCAP in China: Partnerships and Outcomes
+Partnerships: Highlight collaborations with CAAS, provincial governments, etc. (cite partnership-focused studies).
+Case Studies: 3–4 deep dives (e.g., Biofortified Sweet Potato Adoption in Guangxi), citing 2–3 documents per case.
+Policy Impact: Reference documents showing CCCAP’s role in national strategies (e.g., China’s potato staple policy).
+5. Innovations and Tools
+List CCCAP-developed tools/varieties (e.g., disease diagnostic kits, predictive models), citing the original papers.
+Example: *“CCCAP’s late blight resistance gene-editing protocol (Chen et al., 2021) reduced pesticide use by 40% in Sichuan Province (Wu et al., 2023).”*
+6. Funding and Collaborations
+Map funders (e.g., CGIAR, China’s Ministry of Agriculture) to outcomes, citing donor-acknowledged studies.
+7. Conclusion
+Synthesize evidence: “As demonstrated across 41 studies, CCCAP’s work in China (2015–2025) achieved X, Y, Z…”
+Link to future priorities, citing recent documents (e.g., 2024–2025 papers).
+8. References
+Full APA list of all 41 documents, formatted as:
+Author, A. (Year). Title. Source, volume(issue), pages. DOI/URL
+
+LLM Prompt for Writing
+Copy
+Download
+"Act as a scientific writer synthesizing 41 CCCAP (International Potato Center) documents into an impact report. Follow these rules:  
+
+1. **Refer to the organization as CCCAP** (except in APA citations where the original document uses ‘CIP’).  
+2. **Base every claim on the 41 documents**—no unsourced statements.  
+3. **Cite sources in APA style** (Author, Year) for every finding (e.g., ‘Yield gains averaged 20% (Li et al., 2021)’).  
+4. **Structure the document with these sections**:  
+   - Title Page  
+   - Executive Summary  
+   - Thematic Chapters (use tags like Climate Adaptation, Nutrition, etc.)  
+   - CCCAP in China: Partnerships and Outcomes  
+   - Innovations and Tools  
+   - Funding and Collaborations  
+   - Conclusion  
+   - References  
+5. **Highlight China-specific outcomes** in every section.  
+6. **Include all 41 documents in the References section** with exact APA formatting.  
+
+For each document, extract:  
+- Key findings related to CCCAP’s impact in China.  
+- Measurable outcomes (e.g., yield gains, adoption rates).  
+- Names of varieties/tools, partnerships, or policies influenced.  
+
+Prioritize clarity, traceability to sources, and a narrative that showcases CCCAP’s scientific contributions."  
+
+Example of Rigorous Sourcing
+"CCCAP addressed viral diseases in sweet potato through the release of ‘Guangshu 7,’ which showed 95% resistance to SPVD in field trials (Zhou et al., 2018). By 2024, the variety was adopted by 12,000 farmers in Guangdong Province, increasing incomes by $220 per household (CCCAP, 2024). This work was funded by the CGIAR Research Program on Roots, Tubers, and Bananas (Xu et al., 2019)."
+This ensures your document is evidence-driven, properly cited, and branded as CCCAP while excluding methodology details. Let me know if you need further tweaks! 🥔🔬
+```
+:::
+
+## Step 6: Chatgpt 03 + Deep Research Tool
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Hi, I'll give you two prompt to use the information I'm uploading. The first are your guidelines and the second is a structure to use the documents. Okay?
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Thanks for sharing the materials. I’m ready to receive your two prompts whenever you’re ready!
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+First prompt, guidelines: Act as a scientific writer synthesizing 41 CCCAP (International Potato Center) documents into an impact report. Follow these rules: 1. **Refer to the organization as CCCAP** (except in APA citations where the original document uses ‘CIP’). 2. **Base every claim on the 41 documents**—no unsourced statements. 3. **Cite sources in APA style** (Author, Year) for every finding (e.g., ‘Yield gains averaged 20% (Li et al., 2021)’). 4. **Structure the document with these sections**: - Title Page - Executive Summary - Thematic Chapters (use tags like Climate Adaptation, Nutrition, etc.) - CCCAP in China: Partnerships and Outcomes - Innovations and Tools - Funding and Collaborations - Conclusion - References 5. **Highlight China-specific outcomes** in every section. 6. **Include all 41 documents in the References section** with exact APA formatting. For each document, extract: - Key findings related to CCCAP’s impact in China. - Measurable outcomes (e.g., yield gains, adoption rates). - Names of varieties/tools, partnerships, or policies influenced. Prioritize clarity, traceability to sources, and a narrative that showcases CCCAP’s scientific contributions.
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Acknowledged and stored. Ready for the second prompt.
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Second prompt, document generation: Please generate this: 1. Title Page Title: CCCAP’s Scientific Impact in China (2015–2025): Evidence from 41 Studies Subtitle: Innovations in Potato and Sweet Potato Systems for Climate Resilience, Nutrition, and Prosperity 2. Executive Summary Summarize CCCAP’s decade-long work, emphasizing China-focused outcomes and key themes (e.g., climate adaptation, disease resistance). Example: *“CCCAP’s collaboration with CAAS produced 8 drought-tolerant potato varieties adopted by 50,000 Chinese farmers (Li et al., 2020; Wang et al., 2023).”* 3. Thematic Chapters Group findings by tags (e.g., Climate Adaptation, Nutrition, Pest Control). For each theme: Objective: CCCAP’s goal, citing 1–2 foundational documents. Key Findings: Paraphrase results with (Author, Year) citations. Impact: Link to real-world outcomes (e.g., farmer adoption, policy changes), citing follow-up studies. Example Subheading: Climate-Resilient Varieties for Arid Regions *“CCCAP developed ‘Xinjiang No. 3,’ a drought-tolerant potato variety that increased yields by 22% in Northwest China (Zhang et al., 2019). By 2022, it was planted across 15,000 hectares, reducing irrigation needs by 30% (Liu et al., 2022).”* 4. CCCAP in China: Partnerships and Outcomes Partnerships: Highlight collaborations with CAAS, provincial governments, etc. (cite partnership-focused studies). Case Studies: 3–4 deep dives (e.g., Biofortified Sweet Potato Adoption in Guangxi), citing 2–3 documents per case. Policy Impact: Reference documents showing CCCAP’s role in national strategies (e.g., China’s potato staple policy). 5. Innovations and Tools List CCCAP-developed tools/varieties (e.g., disease diagnostic kits, predictive models), citing the original papers. Example: *“CCCAP’s late blight resistance gene-editing protocol (Chen et al., 2021) reduced pesticide use by 40% in Sichuan Province (Wu et al., 2023).”* 6. Funding and Collaborations Map funders (e.g., CGIAR, China’s Ministry of Agriculture) to outcomes, citing donor-acknowledged studies. 7. Conclusion Synthesize evidence: “As demonstrated across 41 studies, CCCAP’s work in China (2015–2025) achieved X, Y, Z…” Link to future priorities, citing recent documents (e.g., 2024–2025 papers). 8. References Full APA list of all 41 documents, formatted as: Author, A. (Year). Title. Source, volume(issue), pages. DOI/URL The inline citations must be: (Author, year) Wait my next prompt for a last instruction
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Received and fully understood. I’m on standby for your next instruction before starting document generation.
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+To clarify: - The document called The Potato of the Future in China.docx have all the information extracted from the 41 docuemnts. You must use this to generate the document. - The .txt files are just for citation. - The 10_documents.pdf file have the following 10 documents: Observation for the way of primary infection of Phytophthora infestans in potato, Investigation of Phytophthora infestans population structure in China, Annual Report of AsiaBlight-China in 2021 and Workplan for 2022, The potato of the future in China. Opening remarks at China International Potato Summit Forum, Root and tuber crops for food security and income generation in Hunan, Improvement of processing technology research and utilization of sweetpotato and its derived foods in China and Rwanda, Pathogen effectors as probes for improving late blight resistance in potato, Genome and transcriptome analysis of Chinese potato late blight strains, Analysis of C...ion in Potato_许春江-3, Adoption and Impact of Cooperation-88 Potato in China. I'm uploading these only for citation. Lets begin with the generation!
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Great, thanks for the clarification. Just to confirm before I begin writing: Would you like the full impact report draft now, starting from the Title Page through to the References, formatted according to your instructions? Or would you prefer me to generate the report section by section (e.g., first Title Page + Executive Summary, then Thematic Chapters, etc.) for your review and feedback along the way?
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Generate the full document. Please is really important the inline APA citation (Author, year).
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Understood. I will now generate the full impact report titled CCCAP’s Scientific Impact in China (2015–2025), using exclusively the content from The Potato of the Future in China.docx for synthesis, and the accompanying files solely for APA-style inline citations and references. I’ll ensure all claims are sourced and formatted according to your guidelines. I’ll let you know as soon as the full draft is ready.
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+I don't like it; you didn't respect the citation in Apa format when generating the text. What do you need to do this?
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+I can absolutely tighten the draft so every single statement is followed by a correct in-text citation in APA “(Author & Author, Year)” or “(Organisation, Year)” format, and make sure those in-text names match the full references list one-for-one.
+ To do that reliably, I need two kinds of information:
+What I need	Why it matters
+A complete, authoritative APA reference entry for each of the 41 source documents (authors, year, full title, journal/conference or institutional publisher, volume/issue/pages, DOI/URL).	Inline citations must match the reference list exactly. Several of the files show draft or partial reference strings (some lack authors, years, or journals). If even one element is missing, the citation ceases to be true APA.
+Your preferred rules for organisations & multi-author names (e.g., should “Standing Panel on Impact Assessment” be cited as SPIA or spelled out; should we use “Li et al.” after the first long citation, etc.).	APA allows some flexibility (group abbreviations, et al. rules). Confirming your preference means the final document matches your house style.
+How you could provide this
+1.	Share a list or table (Excel, Word, or pasted into chat) with each document’s full APA entry.
+2.	If a few items are missing bibliographic details (e.g., internal slide decks), just tell me the form you want to use (e.g., “CCCAP, 2022, internal report”).
+What I will do once I have it
+•	Re-run the synthesis, attaching an inline citation after each factual sentence, exactly as “(FirstAuthor Surname et al., Year)” or the agreed organisation name.
+•	Ensure the reference list reproduces your supplied APA entries verbatim and in alphabetical order.
+•	Double-check that every inline citation has a matching entry and vice-versa (no extras, no omissions).
+Let me know if you can provide the full APA details (or point me to where they’re stored). Once I have that, I can turn around a clean, fully compliant draft quickly.
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Let's re do the document, please respect the inline APA citation (author, year). Also use the 41-information extraction from the The Potato of the Future in China document. Okay?
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Thanks for confirming. To ensure I generate the new document exactly as you expect, could you please confirm the following:
+1.	Do you want me to only use inline citations where the author and year are clearly identified in the 41-source summaries within The Potato of the Future in China?
+2.	For documents where the author or year is not specified, do you have a preferred fallback citation format (e.g., "CCCAP, n.d." or custom names)?
+3.	Should I exclude any references entirely if full author-year citation details aren’t found in the summary?
+Once I have your preferences, I’ll regenerate the full impact report with strict APA in-line citations only where proper author-year formats are clearly supported.
+
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+We have citations for most, for ones we don't please inside the parenthesis the title of the reference) Don't exclude any reference! Any further doubts?
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Perfect, thanks for the clarification. I’ll regenerate the full impact report using only the content extracted from The Potato of the Future in China and ensure every statement is followed by a strict APA-style inline citation—either (Author, Year) or, when author/year are unavailable, ("Title of the Reference"). None of the 41 source references will be excluded.
+I'll let you know once the document is ready for review.
+
+```
+:::
+
+## Step 7: Correct Executive Summary with Chat GPT o3
+
+After uploading the previous generated document.
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+I generated this document with ChatGPT o3 and deep research. I like this final product and quite precise and the content has the correct intent that I want. There is at the beginning of the file a section called executive summary which was done first on the document and that is wrong. Please give me a new Executive summary based on the whole document content in markdown format. This executive summary must have these topics (these are present on the document): Germplasm exchange and its contribution to variety improvement / Technical knowledge transfer and innovation / Talent development through trainings and workshops at CIP HQ. Also, the executive summary must be consice and must have a "punchy" message to the audience.
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Here is a concise and impactful executive summary in markdown format, incorporating the required topics and reflecting the entire document's content:
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Don’t create separated sections for the topics rather, create a single text with a paragraph for each topic and these are connected so the user can read it smoothly. 
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+The sections have been smoothly integrated into a cohesive, continuous text. Let me know if any additional refinements are needed!
+```
+:::
+
+## Step 8: PowerPoint Generation + Chat GPT o3
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Check this final draft. I want to generate PowerPoint style content so the communications team can design and work on it. So, people like CCCAP scientists can walk out with two materials that they can readily use.
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Based on the final draft provided, here's a structured outline for PowerPoint-style content. Each slide suggestion includes a concise title and key bullet points suitable for visual presentation, allowing CCCAP scientists to use these materials effectively in their communication activities.
+Content: 
+CCCAP’s Scientific Impact in China (2015–2025)
+
+Slide 1: Title Slide
+•	CCCAP’s Scientific Impact in China
+•	Evidence from 41 Studies (2015–2025)
+•	International Potato Center and Chinese Institutions
+
+Slide 2: Key Achievements
+•	Development of 100+ improved potato varieties
+•	Approximately 35 varieties currently cultivated
+•	Significant economic impact: Cooperation-88 variety generated US$2.84–3.73 billion
+
+Slide 3: Climate Change Adaptation
+•	Breeding climate-resilient potato varieties (heat, drought, and elevated CO₂)
+•	Highlight: "Favorita" variety stability under heat+CO₂ stress
+•	Targeted breeding using genomic studies on drought and salinity tolerance
+
+Slide 4: Sustainable Intensification
+•	Zero-tillage and straw mulch (PZTM) adoption
+•	Yield increases (average +20%), improved water efficiency (~10%)
+•	Expanded potato cultivation into rice fallows
+
+Slide 5: Nutrition and Food Security
+•	Biofortification: High iron/zinc potatoes combat "hidden hunger"
+•	Anthocyanin-rich potatoes for higher nutritional value
+•	Enhanced potato and sweetpotato processing for improved nutrition and market expansion
+
+Slide 6: Pest and Disease Management
+•	Late blight resistant varieties (Cooperation-88)
+•	Establishment of AsiaBlight-China network
+•	Innovations: Nanoparticle biopesticides, portable diagnostic tools
+
+Slide 7: Modern Potato Breeding
+•	Transition to diploid hybrid potato breeding (true potato seed)
+•	Rapid Agrobacterium-mediated gene transformation systems
+•	CRISPR gene editing to develop improved potato traits
+
+Slide 8: Genetic Resources and Conservation
+•	Sequencing of potato and sweetpotato genomes
+•	Enhanced germplasm utilization and conservation
+•	Practical breeding guidance from genetic studies
+
+Slide 9: Partnerships and Collaborative Impact
+•	Highlight partnerships (CAAS, Chinese universities, private sector)
+•	Case study success: Cooperation-88 adoption, AsiaBlight-China IPM, Potato-rice rotation
+•	Capacity-building and talent development through training
+
+Slide 10: Innovations and Tools Developed
+•	Advanced breeding technologies (marker-assisted selection, genomic selection)
+•	Transgenic protocols and gene editing tools
+•	Crop management innovations (aeroponics, precision agriculture)
+
+Slide 11: Future Priorities
+•	Scaling technologies to smallholder farmers
+•	Addressing climate resilience and environmental sustainability
+•	Value addition and improved nutrition through innovation
+•	Expanding international collaboration and South-South cooperation
+
+Slide 12: Conclusion
+•	CCCAP’s role in agricultural transformation
+•	Contributions to food security, nutrition, and climate resilience
+•	Commitment to ongoing innovation and international collaboration
+```
+:::
+
+### Prompt
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+Please refine this ppt style content
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+To refine the PowerPoint-style content effectively, could you please clarify the following:
+1.	Who is the target audience (e.g., scientists, policymakers, general public)?
+2.	Should the tone be more technical, persuasive, or narrative-driven?
+3.	Are there specific branding or design preferences (e.g., number of bullets per slide, inclusion of visuals/data)?
+4.	Would you like a more condensed version for a short presentation, or keep the full detailed structure?
+This will help tailor the slide content appropriately.
+
+```
+:::
+
+### Prompt + ChatGPT o3 + Deep Research Tool
+
+:::{.callout-note collapse="true" title="Prompt"}
+```md
+- We will be distributing this to the science community, partners and donors and although they may not all be scientists, they do understand the type of work we do, so we don't need to make this report to a very general audience - concise and "punchy" message to the audience - Probably communications team will handle this but you can take or look on other communications teams for global companies and get some ideas (related to International Potato Center (called CCAP in China), CGIAR, and related ). - I want a full detailed structure to facilitate the work of the communications team.
+```
+:::
+
+### Answer
+
+:::{.callout-note collapse="true" title="Answer"}
+```md
+Great, I’ll refine the PowerPoint-style content to be concise and impactful while preserving technical depth for an audience of scientific partners and donors. I’ll structure it in a way that aligns with communication strategies used by organizations like the International Potato Center (CIP), CCCAP, and CGIAR.
+I’ll include punchy slide titles, concise bullet points, and a logical flow that can be easily adapted by a design team. I’ll let you know when the refined version is ready.
+
+```
+:::

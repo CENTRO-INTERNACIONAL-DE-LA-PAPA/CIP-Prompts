@@ -1,0 +1,7 @@
+---
+title: "Workflows"
+listing: 
+    contents: workflows
+    type: table
+    categories: true
+---
