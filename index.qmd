@@ -1,8 +1,0 @@
----
-title: "Workflows for Lage Language Models (LLM's)"
-subtitle: "A collection of workflows to guide LLm's for the generation of high quality documents based on raw documents"
----
-
-# Workflow for CCCAP Report 2015 - 2025
-
-Please follow this [link](prompt_workflows/cccap_template.qmd)
