@@ -4,21 +4,14 @@
     "href": "listing.html",
     "title": "Workflows",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCCCAP Report 2015 - 2025 Workflow\n\n\nPiero Palacios, Mishell Portilla, Leroy Mwanzia, Henry Juarez\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "prompt_workflows/cccap_template.html",
-    "href": "prompt_workflows/cccap_template.html",
-    "title": "CCCAP Report 2015 - 2025 Workflow",
-    "section": "",
-    "text": "Used Ares (a tool built to generate reports from CGSpace) to run an initial search.\nFilters applied:\n\nRepitory: CGSpace.\nCommunity: International Potato Center.\nCountry: China.\nDate Range: 2015 - 2025\n\nResults: 21 publications identified."
+    "text": "CCCAP Report 2015 - 2025 Workflow\n\n\nCompedium preparation process\n\n\n\nAI\n\nCCCAP\n\npotato\n\nprompt\n\nLLM\n\n\n\n\n\n\n\n\n\nPiero Palacios, Mishell Portilla, Leroy Mwanzia, Henry Juarez\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "prompt_workflows/cccap_template.html#step-1-initial-search-in-ares",
     "href": "prompt_workflows/cccap_template.html#step-1-initial-search-in-ares",
     "title": "CCCAP Report 2015 - 2025 Workflow",
-    "section": "",
-    "text": "Used Ares (a tool built to generate reports from CGSpace) to run an initial search.\nFilters applied:\n\nRepitory: CGSpace.\nCommunity: International Potato Center.\nCountry: China.\nDate Range: 2015 - 2025\n\nResults: 21 publications identified."
+    "section": "Step 1: Initial Search in Ares",
+    "text": "Step 1: Initial Search in Ares\nUsed Ares (a tool built to generate reports from CGSpace) to run an initial search.\nFilters applied:\n\nRepitory: CGSpace.\nCommunity: International Potato Center.\nCountry: China.\nDate Range: 2015 - 2025\n\nResults: 21 publications identified."
   },
   {
     "objectID": "prompt_workflows/cccap_template.html#step-2-list-review-and-expansion",
