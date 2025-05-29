@@ -1,11 +1,6 @@
 ---
 title: "CCCAP Report 2015 - 2025 Workflow"
 subtitle: "Compedium preparation process"
-author: 
-    - name: Piero Palacios
-    - name: Mishell Portilla
-    - name: Leroy Mwanzia
-    - name: Henry Juarez
 editor: source
 categories:
     - AI
