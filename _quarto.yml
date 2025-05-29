@@ -31,6 +31,5 @@ format:
     toc: true
     code-overflow: wrap
     code-copy: hover
-    link-external-icon: true
     callout-appearance: minimal
 
