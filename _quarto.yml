@@ -8,7 +8,7 @@ website:
       - listing.qmd
     tools:
       - icon: github
-      - href: "https://github.com/CENTRO-INTERNACIONAL-DE-LA-PAPA/CIP-Prompts"
+        href: "https://github.com/CENTRO-INTERNACIONAL-DE-LA-PAPA/CIP-Prompts"
     
   page-footer: 
     left: 
