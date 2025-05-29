@@ -2,6 +2,6 @@
 title: "Workflows"
 listing: 
     contents: prompt_workflows
-    type: table
+    type: default
     categories: true
 ---

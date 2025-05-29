@@ -13,7 +13,16 @@ website:
       - href: https://github.com/CENTRO-INTERNACIONAL-DE-LA-PAPA/CIP-Prompts 
     
   page-footer: 
-    left: "Here goes copyright"
+    left: 
+      - text: "{{< iconify fluent-emoji-flat:potato size=2x >}}"
+        href: "https://cipotato.org/potato/"
+      - text: "{{< iconify openmoji:roasted-sweet-potato size=2x >}}"
+        href: "https://cipotato.org/sweetpotato/"
+    right: 
+      - text: "{{< iconify mdi:cc-outline size=2x >}}"
+        href: "https://creativecommons.org/licenses/by/4.0/deed.es"
+      - text: "{{< iconify mdi:human-male size=2x >}}"
+        href: "_blank"
 
 brand: brand/_brand.yml
 

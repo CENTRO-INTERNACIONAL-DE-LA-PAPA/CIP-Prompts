@@ -41,7 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7b0939edd67e0e71d4906b02b5fd7b75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6ecdd83cc814e054311c31a47b8a8c93.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -139,7 +140,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/inverted_cip_cgiar_corrected.png" alt="" class="navbar-logo">
+    <img src="./images/Logo-2019.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -198,54 +199,47 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNDQ0NBUCUyQ3BvdGF0byUyQ3Byb21wdCUyQ0xMTQ==" data-listing-file-modified-sort="1748528270940" data-listing-reading-time-sort="24" data-listing-word-count-sort="4633">
+<div class="thumbnail"><a href="./prompt_workflows/cccap_template.html" class="no-external">
+
+<p class="card-img-top"><img src="images\cccap.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./prompt_workflows/cccap_template.html" class="no-external">CCCAP Report 2015 - 2025 Workflow</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./prompt_workflows/cccap_template.html" class="no-external">Compedium preparation process</a>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
+<div class="listing-categories">
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
+<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
 
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
+<div class="listing-category" onclick="window.quartoListingCategory('Q0NDQVA='); return false;">CCCAP</div>
 
-</tr>
-</thead>
-<tbody class="list">
+<div class="listing-category" onclick="window.quartoListingCategory('cG90YXRv'); return false;">potato</div>
 
-<tr data-index="0" data-categories="QUklMkNDQ0NBUCUyQ3BvdGF0byUyQ3Byb21wdCUyQ0xMTQ==" data-listing-file-modified-sort="1748466120690" data-listing-reading-time-sort="24" data-listing-word-count-sort="4633" data-listing-title-sort="CCCAP Report 2015 - 2025 Workflow" data-listing-filename-sort="cccap_template.qmd">
-<td>
-<a href="./prompt_workflows/cccap_template.html" class="title listing-title">CCCAP Report 2015 - 2025 Workflow</a>
-</td>
-<td>
-<span class="listing-author">Piero Palacios, Mishell Portilla, Leroy Mwanzia, Henry Juarez</span>
-</td>
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0'); return false;">prompt</div>
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
 
-</tbody>
-</table>
+</div>
+<div class="delink listing-description"><a href="./prompt_workflows/cccap_template.html" class="no-external">
+Used Ares (a tool built to generate reports from CGSpace) to run an initial search.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./prompt_workflows/cccap_template.html" class="no-external">
+<div class="listing-author">
+Piero Palacios, Mishell Portilla, Leroy Mwanzia, Henry Juarez
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -653,13 +647,35 @@ window.Quarto = {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Here goes copyright</p>
-</div>   
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://cipotato.org/potato/">
+<p><iconify-icon role="img" inline="" icon="fluent-emoji-flat:potato" style="font-size: 2em;" aria-label="Icon potato from fluent-emoji-flat Iconify.design set." title="Icon potato from fluent-emoji-flat Iconify.design set."></iconify-icon></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://cipotato.org/sweetpotato/">
+<p><iconify-icon role="img" inline="" icon="openmoji:roasted-sweet-potato" style="font-size: 2em;" aria-label="Icon roasted-sweet-potato from openmoji Iconify.design set." title="Icon roasted-sweet-potato from openmoji Iconify.design set."></iconify-icon></p>
+</a>
+  </li>  
+</ul>
+    </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/licenses/by/4.0/deed.es">
+<p><iconify-icon role="img" inline="" icon="mdi:cc-outline" style="font-size: 2em;" aria-label="Icon cc-outline from mdi Iconify.design set." title="Icon cc-outline from mdi Iconify.design set."></iconify-icon></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./_blank">
+<p><iconify-icon role="img" inline="" icon="mdi:human-male" style="font-size: 2em;" aria-label="Icon human-male from mdi Iconify.design set." title="Icon human-male from mdi Iconify.design set."></iconify-icon></p>
+</a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>

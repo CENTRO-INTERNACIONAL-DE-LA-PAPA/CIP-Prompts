@@ -1,13 +1,19 @@
+meta: 
+  name: 
+    full: Intearnational Potato Center
+    short: CIP
+  link: https://cipotato.org/
+  description: |
+    The International Potato Center (CIP) was founded in 1971 as a research-for-development organization with a focus on potato, sweetpotato and Andean roots and tubers. It delivers innovative science-based solutions to enhance access to affordable nutritious food, foster inclusive sustainable business and employment growth, and drive the climate resilience of root and tuber agri-food systems. Headquartered in Lima, Peru, CIP has a research presence in more than 20 countries in Africa, Asia and Latin America. CIP is a CGIAR research center, a global research partnership for a food-secure future. CGIAR science is dedicated to transforming food, land and water systems in a climate crisis. Its research is carried out by 13 CGIAR Centers/Alliances in close collaboration with hundreds of partners, including national and regional research institutes, civil society organizations, academia, development organizations and the private sector. www.cgiar.org
+  founded: 1971
+
+logo: 
+  medium: images/Logo-2019.png
+
 color:
-  palette:
-    dark-grey: "#222222"
-    blue: "#ddeaf1"
   background: "#f0efe7"
   foreground: black
   primary: "#ffffff"
-
-logo: 
-  medium: images/inverted_cip_cgiar_corrected.png
 
 typography:
   fonts:
